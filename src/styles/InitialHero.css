@@ -1,0 +1,115 @@
+
+@import '../index.css';
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background-color: #121212;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  overflow: hidden;
+}
+
+.hero-content {
+  max-width: 600px;
+  z-index: 2;
+  margin-left: 5%; 
+}
+
+.hero-section h1 {
+  color: #fff;
+  width: 85.78125vw;
+  font-weight: 400;
+  font-size: 6rem; 
+  font-family: 'Abel', sans-serif;
+  line-height: 1;
+  margin-bottom: 20px;
+
+}
+
+.hero-section p {
+  color: #ffffffcc;
+  font-size: 1.8vw; 
+  font-weight: 400;
+  font-family: 'Schibsted Grotesk', sans-serif;
+  max-width: 80%;
+  line-height: 1.5;
+}
+
+.explore-button {
+  background-color: transparent;
+  color: #fff;
+  border: 1px solid #FFFFFF80;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-size: 1.2vw;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: 'Schibsted Grotesk', sans-serif;
+}
+
+.explore-button:hover {
+  background-color: #3d00e0;
+  color: #fff;
+}
+
+.explore-button .arrow-icon {
+  margin-left: 8px;
+}
+
+.hero-background {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%; 
+  height: auto;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-background img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  position: relative;
+  bottom: 0;
+  right: 0;
+}
+
+
+
+@media (max-width: 768px) {
+  .hero-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .hero-content {
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .hero-section h1 {
+    font-size: 8vw;
+  }
+
+  .hero-section p {
+    font-size: 4vw;
+    max-width: 100%;
+  }
+
+  .explore-button {
+    font-size: 3.5vw;
+    padding: 10px 20px;
+  }
+
+  .hero-background {
+    width: 80%;
+  }
+}
+
+

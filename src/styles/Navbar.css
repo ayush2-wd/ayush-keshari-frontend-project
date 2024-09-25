@@ -1,0 +1,146 @@
+@import '../index.css';
+
+.navbar {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 40px;
+    background-color: #121212; 
+}
+  
+.nav-logo h1 {
+    color: #fff;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    justify-content: space-between;
+}
+  
+.navbar-menu {
+    margin-left: 30px;
+}
+
+.navbar-menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 6px 12px;
+    border-radius: 30px;
+    border: 1px solid #FFFFFF80;
+    margin: 0;
+}
+  
+.navbar-menu ul .menu-item {
+    color: #fff;
+    cursor: pointer;
+    background-color: #FFFFFF1A;
+    padding: 6px 12px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-menu ul .menu-items {
+    color: #fff;
+    font-size: 16px;
+    padding: 6px 12px; 
+    cursor: pointer;
+}
+  
+.navbar-menu ul .menu-item:hover {
+    background-color: #404040;
+}
+
+.navbar-button {
+    margin-left: auto; 
+}
+  
+.navbar-button .start-button {
+    background-color: #3d00e0; 
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.start-button:hover {
+    background-color: #3d00e0; 
+}
+  
+.arrow-icon {
+    margin-left: 8px;
+}
+  
+.start-button .arrow-icon svg {
+    font-size: 20px;
+}
+  
+.mobile-menu-icon {
+    display: none;
+    font-size: 24px;
+    color: #fff;
+    cursor: pointer;
+    margin-left: auto;
+    z-index: 1000;
+    position: relative;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+    padding: 10px 20px;
+    position: relative;
+  }
+
+  .navbar-menu {
+    display: none;
+    width: 100%;
+    flex-direction: column;
+    margin-left: 0;
+  }
+
+  .navbar-menu.active {
+    display: flex; 
+    z-index: 1;
+  }
+
+  .navbar-menu ul {
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    border: none;
+  }
+
+  .navbar-menu ul .menu-item, 
+  .navbar-menu ul .menu-items {
+    padding: 12px;
+    text-align: center;
+    border-bottom: 1px solid #FFFFFF1A;
+  }
+
+  .navbar-button {
+    display: none;  
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    margin-left: auto;
+  }
+
+  .navbar-button.active {
+    display: flex;
+    justify-content: center;
+    background-color: #3d00e0; 
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    margin-top: 20px;
+  }
+}

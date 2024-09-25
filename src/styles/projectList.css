@@ -1,0 +1,176 @@
+@import '../index.css';
+.projectListMain {
+    width: 100%;
+    max-width: 622px; 
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .proListMainImg {
+    width: 100%;
+    height: 448px;
+    border-radius: 24px;
+    background-color: #171717;
+    overflow: hidden;
+    position: relative; 
+  }
+  
+  .proListMainImg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    object-position: center; 
+  }
+
+  .proListText {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    color: white;
+  }
+  
+  .proListTextFirst {
+    display: flex;
+    gap: 9px;
+  }
+  .text1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2.41vh;
+    border-radius: 30px;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    padding: 8px 15px 8px 12px;
+    border: 1px solid #666666;
+    font-size: 1rem;
+  }
+  
+  .text2 {
+    height: 2.41vh;
+    border: 1px solid #666666;
+    padding: 8px 12px 8px 12px;
+    display: flex;
+    border-radius: 30px;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+  }
+  .text3 {
+    height: 2.41vh;
+    border: 1px solid #666666;
+    padding: 8px 12px 8px 12px;
+    display: flex;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+  }
+  
+  .proListTextSecond {
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 40px;
+  }
+  
+
+  @media (max-width: 1059px) { 
+    .proListMainImg {
+      width: 100%;
+      height: 320px;
+      border-radius: 24px;
+      background-color: #171717;
+      overflow: hidden;
+      position: relative; 
+    }
+  
+    .proListTextSecond {
+      font-size: 28px;
+    }
+  }
+  @media (max-width: 1024px) {
+  
+    .proListMainImg {
+      width: 100%;
+      height: 320px;
+      border-radius: 24px;
+      background-color: #171717;
+      overflow: hidden;
+      position: relative; 
+    }
+  
+    .proListTextSecond {
+      font-size: 28px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .projectListMain {
+      gap: 12px;
+    }
+  
+    .proListMainImg {
+      width: 100%;
+      height: 300px;
+      border-radius: 24px;
+      background-color: #171717;
+      overflow: hidden;
+      position: relative; 
+    }
+  
+    .proListTextSecond {
+      font-size: 20px;
+    }
+    .text1,
+    .text2,
+    .text3 {
+      font-size: 0.7rem;
+    }
+  
+    .proListText {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      color: white;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .projectListMain {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+  
+    .proListMainImg {
+      width: 100%;
+      height: 25vh;
+    }
+  
+    .proListTextSecond {
+      font-size: 20px;
+    }
+    .text1,
+    .text2,
+    .text3 {
+      font-size: 0.7rem;
+    }
+  
+    .proListText {
+      width: 100%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      color: white;
+    }
+  }

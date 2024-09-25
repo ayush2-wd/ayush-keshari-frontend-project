@@ -1,0 +1,72 @@
+.serviceListMain {
+  width: 370.67px;
+  height: 300px;
+  border-radius: 24px;
+  padding: 36px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.serviceListHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.serviceListText1 {
+  width: 245px;
+  height: 66px;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+
+.arrowIcon {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.serviceListText2 {
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 28px;
+}
+
+
+@media (max-width: 1024px) {
+  .serviceListMain {
+    width: 65vw;
+    height: 35vh;
+  }
+}
+
+@media (max-width: 768px) {
+  .serviceListMain {
+    width: 60vw;
+    height: 40vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .serviceListMain {
+    height: 40vh;
+  }
+  .serviceListText1 {
+    font-size: 2rem;
+    line-height: 30px;
+  }
+  .serviceListText2 {
+    font-weight: 400;
+    font-size: 0.8rem;
+    line-height: 20px;
+  }
+  .arrowIcon {
+    width: 20px;
+    height: 20px;
+  }
+}

@@ -1,0 +1,176 @@
+@import '../index.css';
+.aboutSection {
+    padding: 80px;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    background-color: black;
+    color: white;
+    justify-content: space-between;
+  }
+  
+  .aboutMain {
+    width: 40%; 
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+  }
+  
+  .aboutMain p {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+  }
+  
+  .btn-area {
+    width: 350px;
+    height: 134px;
+    background-color: #3d00e0;
+    color: #3d00e0;
+    border-radius: 360px;
+  }
+  
+  .aboutContent {
+    width: 55%; 
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .aboutContent h3 {
+    gap: 10px;
+    color: white;
+    font-family: 'Schibsted Grotesk', sans-serif;
+    font-size: 30px;
+  }
+  
+  .aboutContent h3 span {
+    color: grey;
+  }
+  
+  .about-btn {
+    font-family: 'Schibsted Grotesk', sans-serif;
+    width: 170px;
+    height: 40px;
+    padding: 10px;
+    gap: 10px;
+  }
+  
+  .about-btn div {
+    width: 168px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #3d00e0;
+    border-radius: 360px;
+    padding: 12px 24px;
+    margin: 0;
+    gap: 12px;
+    color: white;
+    cursor: pointer;
+  }
+  .about-btn div:hover{
+    color: black;
+    background-color: white;
+  }
+  
+
+  @media (max-width: 1024px) {
+    .aboutSection {
+      padding: 40px;
+      flex-direction: column;
+      height: auto;
+    }
+  
+    .aboutMain {
+      width: 80%;
+      text-align: start;
+    }
+  
+    .aboutContent {
+      width: 100%;
+    }
+  
+    .btn-area {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+
+  @media (max-width: 768px) {
+    .aboutSection {
+      padding: 30px;
+      flex-direction: column;
+      justify-content: center;
+    }
+  
+    .aboutMain {
+      width: 100%;
+      text-align: start;
+    }
+  
+    .aboutContent {
+      width: 100%;
+      padding: 0;
+      gap: 20px;
+    }
+  
+    .aboutContent h3 {
+      font-size: 1.5rem;
+    }
+  
+    .btn-area {
+      width: 100%;
+      height: auto;
+    }
+  
+    .about-btn {
+      width: 30%;
+      padding: 5px;
+    }
+  
+    .about-btn div {
+      width: 70%;
+      height: 30px;
+      padding: 6px 12px;
+    }
+  }
+  
+
+  @media (max-width: 480px) {
+    .aboutMain {
+      gap: 15px;
+    }
+  
+    .aboutSection {
+      padding: 30px;
+    }
+  
+    .aboutContent {
+      width: 100%;
+      gap: 20px;
+    }
+  
+    .aboutContent h3 {
+      font-size: 1rem;
+    }
+  
+    .aboutMain p {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  
+    .about-btn {
+      width: 40%;
+    }
+    .about-btn div {
+      font-size: 0.9rem;
+    }
+  }
